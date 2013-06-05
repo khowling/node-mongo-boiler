@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express', online: JSON.stringify(req.online) });
+  res.render('index', { title: 'Express', online: req.online });
 };

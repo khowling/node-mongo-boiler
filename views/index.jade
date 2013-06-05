@@ -3,4 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  p Users Online #{online}
+  p Users Online 
+
+  each user in online
+    li
+      p 
+        = user.date  
+        = user.agent  
